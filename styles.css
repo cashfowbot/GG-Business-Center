@@ -302,6 +302,7 @@ footer a:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 /* Style pour le lien WhatsApp */
 .whatsapp-link {
     display: inline-block;
@@ -325,3 +326,150 @@ footer a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 100px 20px; /* Réduit l'espace de padding */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr; /* Un produit par ligne */
+    }
+
+    /* Catégories */
+.categories {
+    display: flex;
+    overflow-x: auto; /* Permet le défilement horizontal */
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    scroll-behavior: smooth; /* Ajoute une transition fluide au défilement */
+    white-space: nowrap; /* Empêche les catégories de se couper sur plusieurs lignes */
+}
+
+.categories::-webkit-scrollbar {
+    height: 8px; /* Hauteur de la barre de défilement */
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background: #4395ed; /* Couleur de la barre de défilement */
+    border-radius: 10px;
+}
+
+.categories::-webkit-scrollbar-track {
+    background: #f4f4f4; /* Couleur de l'arrière-plan de la barre */
+}
+
+.category {
+    display: inline-block;
+    background: #4395ed;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Empêche les catégories de se couper sur plusieurs lignes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.category:hover {
+    background: #3178c6;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 100px 20px; /* Réduit l'espace de padding */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr; /* Un produit par ligne */
+    }
+
+    /* Conserver le comportement de défilement horizontal pour les catégories */
+    .categories {
+        overflow-x: auto; /* Garder la possibilité de défiler horizontalement */
+        justify-content: flex-start; /* Aligne les catégories à gauche */
+    }
+
+    .category {
+        margin-bottom: 10px; /* Espacement entre les catégories */
+    }
+
+    .interested-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .product-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-item p {
+        font-size: 0.9rem;
+    }
+
+    .product-item .price {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+}
