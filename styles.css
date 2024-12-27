@@ -1,0 +1,327 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4395ed;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Section d'accueil (Hero) */
+.hero {
+    background: url('business.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Section Produits */
+#produits {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#produits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-item .price {
+    font-size: 1.2rem;
+    color: #4395ed;
+    font-weight: bold;
+}
+
+/* Bouton Intéressé */
+.interested-button {
+    display: inline-block;
+    background: #4395ed;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.interested-button:hover {
+    background: #3178c6;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Section À propos */
+#a-propos {
+    background: #4395ed;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#a-propos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#a-propos p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* Section Contact */
+#contact {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    display: block;
+    width: 100%;
+    background: #4395ed;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact button:hover {
+    background: #3178c6;
+}
+
+/* Pied de page */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #FFD700;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFC107;
+}
+
+/* Catégories */
+.categories {
+    display: flex;
+    overflow-x: auto; /* Permet le défilement horizontal */
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    scroll-behavior: smooth; /* Ajoute une transition fluide au défilement */
+}
+
+.categories::-webkit-scrollbar {
+    height: 8px; /* Hauteur de la barre de défilement */
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background: #4395ed; /* Couleur de la barre de défilement */
+    border-radius: 10px;
+}
+
+.categories::-webkit-scrollbar-track {
+    background: #f4f4f4; /* Couleur de l'arrière-plan de la barre */
+}
+
+.category {
+    display: inline-block;
+    background: #4395ed;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Empêche les catégories de se couper sur plusieurs lignes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.category:hover {
+    background: #3178c6;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Style pour le lien WhatsApp */
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25d366; /* Couleur de WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #128c7e; /* Couleur au survol */
+}
+
+/* Animation au survol des produits */
+.product-item:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
